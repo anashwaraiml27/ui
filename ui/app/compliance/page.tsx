@@ -6,9 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch" // Need to create Switch component first, will import from ui/switch (mocking for now or will create it next)
-// Actually I forgot to create Switch. I'll use a checkbox styled as switch for now or mock it.
-// Wait, I should create the Switch component properly.
 
 // Inline Switch Component for speed (usually in components/ui/switch.tsx)
 function SimpleSwitch({ checked, onCheckedChange }: { checked?: boolean, onCheckedChange?: (c: boolean) => void }) {

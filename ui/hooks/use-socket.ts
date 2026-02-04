@@ -7,7 +7,7 @@ export function useWebSocket(url: string) {
 
     useEffect(() => {
         // Avoid re-connecting on every render if url hasn't changed
-        const ws = new WebSocket(url);
+        const ws = new WebSocket("ws://35.200.217.153:8080/proxy/8000/ws/dashboard");
         socketRef.current = ws;
 
         ws.onopen = () => {

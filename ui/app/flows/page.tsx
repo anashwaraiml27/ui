@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { ChevronLeft, Plus, Save, Play, Settings } from "lucide-react"
-
+import React from "react"
 import { Button } from "@/components/ui/button"
 import { FlowNode } from "@/components/flow-editor/FlowNode"
 import { Input } from "@/components/ui/input"
@@ -77,8 +77,7 @@ export default function FlowEditorPage() {
                             {...node}
                             type={node.type as any}
                             selected={selectedNodeId === node.id}
-                            onClick={(e: Event) => {
-                                e.stopPropagation()
+                            onClick={() => {
                                 setSelectedNodeId(node.id)
                             }}
                         />

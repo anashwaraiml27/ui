@@ -7,6 +7,7 @@ export interface Call {
     startTime: string;
     duration?: number;
     campaignId: string;
+    llmTokenSpeed: number;
     currentNodeId: string;
     lastTranscript?: string;
     sentiment?: 'positive' | 'neutral' | 'negative' | 'angry';
@@ -15,6 +16,7 @@ export interface Call {
         llm: number;
         tts: number;
     };
+    
 }
 
 export interface Node {
@@ -37,6 +39,7 @@ export interface SystemStats {
         total: number;
     };
     errorRate: number;
+    llmTokenSpeed: number;
 }
 
 export interface VoiceConfig {
